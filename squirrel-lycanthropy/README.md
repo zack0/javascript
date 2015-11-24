@@ -9,12 +9,6 @@ To compute ϕ, we need a table n that contains the number of times the various c
 
 For example, we could take the event of eating pizza and put that in a table like this:
 
--------------------------------
-|  nS, nP : 76  |  nS, P : 9  |      
-|               |             |
-|               |             |
--------------------------------
-|               |             |
-|               |             |
-|  S, nP : 4    |  S, P : 1   |
--------------------------------
+| nS, nP  | ns, P  |
+|---------|--------|
+| s, NP   | S, P   |
