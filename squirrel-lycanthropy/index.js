@@ -1,3 +1,4 @@
+var colors = require('colors');
 JOURNAL = require('./data.js');
 
 function hasEvent(event, entry) {
@@ -34,24 +35,26 @@ function storePhi(event, phi) {
 
 function gatherCorrelations(journal) {
   var phis = {};
-  for (var entry = 0; entry < journal.length; entry++) {
-    var events = journal[entry].events;
-    for (var i = 0; i < events.length; i++) {
-      var event = events[i];
+  journal.forEach(function(entry) {
+    entry.events.forEach(function(event) {
       if (!(event in phis))
         phis[event] = phi(tableFor(event, journal));
-    }
-  }
+    });
+  });
   return phis;
 }
 
 var correlations = gatherCorrelations(JOURNAL);
 
-// for (var event in correlations)
-  // console.log(event + ": " + correlations[event]);
+// /*
+for (var event in correlations)
+console.log(event.toString().green + ": " + correlations[event].toString().rainbow);
+// */
 
+/*
 for (var event in correlations) {
 	var correlation = correlations[event];
 	if (correlation > 0.1 || correlation < -0.1)
-		console.log(event + ": " + correlation);
+		console.log(event.toString().green + ": " + correlation.toString().rainbow);
 }
+*/
