@@ -22,9 +22,9 @@ function tableFor(event, journal) {
 function phi(table) {
 	return (table[3] * table[0] - table[2] * table[1]) /
 		Math.sqrt((table[2] + table[3]) *
-						  (table[0] + table[1]) *
-							(table[1] + table[3]) *
-							(table[0] + table[2]));
+				  (table[0] + table[1]) *
+				  (table[1] + table[3]) *
+				  (table[0] + table[2]));
 }
 // console.log(phi())
 
@@ -46,15 +46,14 @@ function gatherCorrelations(journal) {
 
 var correlations = gatherCorrelations(JOURNAL);
 
-// /*
+/*
 for (var event in correlations)
 console.log(event.toString().green + ": " + correlations[event].toString().rainbow);
-// */
+*/
 
-/*
+
 for (var event in correlations) {
 	var correlation = correlations[event];
 	if (correlation > 0.1 || correlation < -0.1)
 		console.log(event.toString().green + ": " + correlation.toString().rainbow);
 }
-*/

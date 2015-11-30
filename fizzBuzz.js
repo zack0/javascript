@@ -1,3 +1,4 @@
+var colors = require('colors');
 // if else else if
 /*
 for (i = 0; i <= 100; i++) {
@@ -26,12 +27,8 @@ while (i <= 100) {
 
 // function fizzBuzz
 // /*
-var i = 0;
-
-fizzBuzz();
-
-function fizzBuzz() {
-	while (i <= 100) {
+function fizzBuzz(i, z) {
+	while (i <= z) {
 		i % 3 === 0 && i % 5 != 0 ? console.log('Fizz') 
 		: i % 5 === 0 && i % 3 != 0 ? console.log('Buzz')
 		: i % 3 === 0 && i % 5 === 0 ? console.log('FizzBuzz') 
@@ -39,6 +36,7 @@ function fizzBuzz() {
 		i++;
 	}
 };
+fizzBuzz(1, 100);
 // */
 
 

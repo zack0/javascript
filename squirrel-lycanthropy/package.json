@@ -1,0 +1,11 @@
+{
+  "name": "squirrel-lycanthropy",
+  "version": "1.0.0",
+  "description": "Correlation is a measure of dependence between variables (\"\"variables\"\" in the statistical sense, not the JavaScript sense). \r It is usually expressed as a coefficient that ranges from -1 to 1. \r Zero correlation means the variables are not related, \r whereas a correlation of one indicates that the two are perfectly related—if you know one, you also know the other. \r Negative one also means that the variables are perfectly related but that they are opposites—when one is true, the other is false.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
