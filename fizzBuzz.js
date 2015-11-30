@@ -29,10 +29,10 @@ while (i <= 100) {
 // /*
 function fizzBuzz(i, z) {
 	while (i <= z) {
-		i % 3 === 0 && i % 5 != 0 ? console.log('Fizz') 
-		: i % 5 === 0 && i % 3 != 0 ? console.log('Buzz')
-		: i % 3 === 0 && i % 5 === 0 ? console.log('FizzBuzz') 
-		: console.log(i);
+		i % 3 === 0 && i % 5 != 0 ? console.log('Fizz'.green) 
+		: i % 5 === 0 && i % 3 != 0 ? console.log('Buzz'.red)
+		: i % 3 === 0 && i % 5 === 0 ? console.log('FizzBuzz'.rainbow) 
+		: console.log(i.toString().blue);
 		i++;
 	}
 };
