@@ -26,6 +26,7 @@ function phi(table) {
 				  (table[1] + table[3]) *
 				  (table[0] + table[2]));
 }
+
 // console.log(phi())
 
 var map = {};
@@ -46,14 +47,15 @@ function gatherCorrelations(journal) {
 
 var correlations = gatherCorrelations(JOURNAL);
 
-/*
+// /*
 for (var event in correlations)
 console.log(event.toString().green + ": " + correlations[event].toString().rainbow);
-*/
+// */
 
-
+/*
 for (var event in correlations) {
 	var correlation = correlations[event];
 	if (correlation > 0.1 || correlation < -0.1)
 		console.log(event.toString().green + ": " + correlation.toString().rainbow);
 }
+*/
