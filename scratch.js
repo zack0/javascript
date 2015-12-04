@@ -178,6 +178,7 @@ console.log(titleCase("I'm a little tea pot"));
 
 // Return Largest Number in Arrays
 
+/*
 function largestOfFour(arr) {
   var newArr = [];
   if (typeof(arr) == "object") {
@@ -196,3 +197,35 @@ return arr;
 }
 	
 console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+*/
+
+// Confirm End of String
+
+/*
+function end(str, target) {
+	
+  var tLength = target.length;
+  var subStr = str.substr(-tLength);
+    
+  if (target == subStr) {
+	console.log("%s does end with the same characters as %s", subStr, target);
+	return true;
+  } else if (target.toLowerCase() == subStr.toLowerCase()) {
+	console.log("%s does end with the same letters as %s", subStr, target);
+	return true;
+  } else {
+	console.log("%s does not end with any match to %s", subStr, target);
+    return false;
+  }
+  
+}
+
+console.log(end("Bastian", "tiaN"));
+*/
+
+function repeat(str, num) {
+  // repeat after me
+  return str;
+}
+
+repeat("abc", 3);
