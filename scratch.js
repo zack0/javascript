@@ -238,9 +238,24 @@ function repeat(str, num) {
 console.log(repeat("abc", 3));
 */
 
+// Truncate String
+/*
 function truncate(str, num) {
-  // Clear out that junk in your trunk
-  return str;
+  var endSlice = num - 3;
+  if (str.length > num) {
+	if (endSlice > 0) {
+	  str = str.slice(0, endSlice).concat("...");
+	  return str;	
+	} else {
+		str = str.slice(0, num).concat("...");
+	    return str;
+	}  
+  } else {
+	return str;  
+  }
 }
 
-truncate("A-tisket a-tasket A green and yellow basket", 11);
+console.log(truncate("A-tisket a-tasket A green and yellow basket", -2));
+*/
+
+// Chunky Monkey
