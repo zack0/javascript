@@ -223,9 +223,24 @@ function end(str, target) {
 console.log(end("Bastian", "tiaN"));
 */
 
+// Repeat String
+
+/*
 function repeat(str, num) {
-  // repeat after me
+  if (num < 0) {
+	  return "";
+  } else {
+	str = str.repeat(num);
+	return str;
+  }
+}
+
+console.log(repeat("abc", 3));
+*/
+
+function truncate(str, num) {
+  // Clear out that junk in your trunk
   return str;
 }
 
-repeat("abc", 3);
+truncate("A-tisket a-tasket A green and yellow basket", 11);
