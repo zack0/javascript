@@ -259,3 +259,15 @@ console.log(truncate("A-tisket a-tasket A green and yellow basket", -2));
 */
 
 // Chunky Monkey
+
+function chunk(arr, size) {
+  var newArr = [];
+  var chunks = arr.length / size;
+  
+	for (i = 0; i <= size; i++) {
+		newArr[i].push(newArr);
+	}
+  return arr;
+}
+
+console.log(chunk(["a", "b", "c", "d"], 2));
