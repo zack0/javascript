@@ -147,17 +147,52 @@ function findLongestWord(str) {
 console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 */
 
-// Title Case
+// Loop Array
 
+/*
 function titleCase(str) {
-	console.log(str);
+	var index;
+	var text = "";
 	var words = str.split(" ");
-	console.log(words);
-	
-	tcWords = words.map(function(val) {
-		val.charAt(0).toUpperCase();
-		console.log(tcWords);
-	}	
+	for (index = 0; index < words.length; index++) {
+		text += words[index] + " ";
+	}
+	return text;
+	console.log(text);
 }
 
 console.log(titleCase("I'm a little tea pot"));
+
+*/
+
+// Title Case
+
+//
+// function titleCase(str) {
+  // return str.replace(/\w\S*/g, function(txt) {
+    // return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  // });
+// }
+
+// console.log(titleCase("I'm a little tea pot"));
+
+// Return Largest Number in Arrays
+
+function largestOfFour(arr) {
+  var newArr = [];
+  if (typeof(arr) == "object") {
+    for (var i = 0; i < arr.length; i++) {
+	  arr[i] = arr[i].sort(function(a, b) {
+	    return a - b;
+	  }); 
+	var lof = arr[i].pop(0);
+	newArr.push(lof);
+	// console.log(arr[i]);
+	// console.log(newArr);
+	}
+  }
+arr = newArr;  
+return arr;
+}
+	
+console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
